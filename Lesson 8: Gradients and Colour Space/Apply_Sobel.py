@@ -29,7 +29,6 @@ def abs_sobel_thresh(img, orient='x', thresh_min=0, thresh_max=255):
     sxbinary = np.zeros_like(scaled_sobel)
     sxbinary[(scaled_sobel >= thresh_min) & (scaled_sobel <= thresh_max)] = 1
     # 6) Return this mask as your binary_output image
-    binary_output = np.copy(sxbinary) # Remove this line
     return binary_output
     
 # Run the function
