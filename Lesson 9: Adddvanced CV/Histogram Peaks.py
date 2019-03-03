@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 # Load our image
 # `mpimg.imread` will load .jpg as 0-255, so normalize back to 0-1
+# Any photo is fine
 img = mpimg.imread('warped_example.jpg')/255
 
 def hist(img):
